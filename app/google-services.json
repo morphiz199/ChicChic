@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "946721774579",
+    "firebase_url": "https://projectchicchic.firebaseio.com",
+    "project_id": "projectchicchic",
+    "storage_bucket": "projectchicchic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946721774579:android:7bb71560acd5bed2db1086",
+        "android_client_info": {
+          "package_name": "com.example.projectchicchic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946721774579-3k3bom6d5edkcsofg3m61cjolpngp60r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4JtzRkfm_aURkvtmvZc5v3GMsxBb2PAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946721774579-3k3bom6d5edkcsofg3m61cjolpngp60r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
