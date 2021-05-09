@@ -74,7 +74,14 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
-
+        imageView48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intTobooking = new Intent(HomeScreen.this,
+                        wrapper.class);
+                startActivity(intTobooking);
+            }
+        });
         imageView51.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
