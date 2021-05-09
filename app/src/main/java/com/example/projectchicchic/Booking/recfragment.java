@@ -1,0 +1,164 @@
+package com.example.projectchicchic.Booking;
+
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+
+import com.example.projectchicchic.Model.model;
+import com.example.projectchicchic.R;
+import com.example.projectchicchic.myAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+
+
+public class recfragment extends Fragment {
+
+
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    RecyclerView recyclerView;
+    myAdapter adapter;
+    ImageView backUpload;
+    EditText editText;
+    Button searchList;
+    ArrayList<model> arrayList;
+
+    DatabaseReference mUserDatabase;
+
+
+    private String mParam1;
+    private String mParam2;
+
+    public recfragment() {
+
+    }
+
+
+    public static recfragment newInstance(String param1, String param2) {
+        recfragment fragment = new recfragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_recfragment, container, false);
+        recyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        backUpload = (ImageView)view.findViewById(R.id.backUpload);
+        editText = (EditText)view.findViewById(R.id.editText);
+        searchList = (Button) view.findViewById(R.id.searchList);
+        arrayList = new ArrayList<>();
+
+        mUserDatabase = FirebaseDatabase.getInstance().getReference("Nail");
+
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (!s.toString().isEmpty()){
+                    search(s.toString());
+
+                }else {
+                    search("");
+                }
+
+            }
+        });
+
+
+        FirebaseRecyclerOptions<model> options =
+                new FirebaseRecyclerOptions.Builder<model>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Nail"), model.class)
+                        .build();
+
+        adapter = new myAdapter(options);
+        recyclerView.setAdapter(adapter);
+
+        return view;
+    }
+    private void search(String toString) {
+        Query query = mUserDatabase.orderByChild("TypeNail")
+                .startAt(toString)
+                .endAt(toString + "\uf8ff");
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.hasChildren()){
+                    arrayList.clear();
+                    for (DataSnapshot dss: snapshot.getChildren()){
+                        final model Model = dss.getValue(model.class);
+                        arrayList.add(Model);
+                    }
+
+//                    myAdapter myAdapter = new myAdapter(onActivityCreated()
+//                            ,arrayList);
+//                    recyclerView.setAdapter(myAdapter);
+//                    myAdapter.notifyDataSetChanged();
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        adapter.stopListening();
+    }
+
+}

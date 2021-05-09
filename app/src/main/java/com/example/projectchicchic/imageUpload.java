@@ -5,8 +5,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.common.collect.BiMap;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -25,15 +29,17 @@ import com.google.firebase.storage.UploadTask;
 
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Random;
 
 @SuppressWarnings("ALL")
 public class imageUpload extends AppCompatActivity {
 
      private ImageView  ImageAdd;
      private TextView  textViewProgress;
-     private EditText  inputImageName;
-     private ProgressBar ProgressBar;
-     private Button  btnUpLoad;
+     private EditText  inputImageName,InputImageNameStore,InputImagePrice,InputBranch;
+     private Button  btnUpLoad,btnChangeImage;
+     String rgbcolor,hexcolor;
+
     private static final int REQUEST_CODE_IMAGE = 101;
     Uri imageUri;
     boolean isImageAdded=false;
@@ -46,17 +52,22 @@ public class imageUpload extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_upload);
 
-        ImageAdd = findViewById(R.id.ViewImage);
-        textViewProgress=findViewById(R.id.TextViewProgress);
+        ImageAdd= findViewById(R.id.ViewImage);
         inputImageName=findViewById(R.id.InputImageName);
-        ProgressBar=findViewById(R.id.progressBar);
+        InputImageNameStore=findViewById(R.id.InputImageNameStore);
+        InputImagePrice=findViewById(R.id.InputImagePrice);
+        InputBranch=findViewById(R.id.InputImageOpenClose);
         btnUpLoad=findViewById(R.id.btnUpload);
+        btnChangeImage=findViewById(R.id.btnChangeImg);
+        //        textViewProgress=findViewById(R.id.TextViewProgress);
+        //        ProgressBar=findViewById(R.id.progressBar);
 
-        textViewProgress.setVisibility(View.GONE);
-        ProgressBar.setVisibility(View.GONE);
+//        textViewProgress.setVisibility(View.GONE);
+//        ProgressBar.setVisibility(View.GONE);
+        Dataref = FirebaseDatabase.getInstance().getReference().child("Partner");
+        StorageRef = FirebaseStorage.getInstance().getReference().child("Partner");
 
-        Dataref = FirebaseDatabase.getInstance().getReference().child("nail");
-        StorageRef = FirebaseStorage.getInstance().getReference().child("nailImage");
+        final Random random = new Random();
 
 
         ImageAdd.setOnClickListener(new View.OnClickListener() {
@@ -72,17 +83,23 @@ public class imageUpload extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                final String imageName = inputImageName.getText().toString();
-               if (isImageAdded!=false && imageName != null)
+               final String NameStore = InputImageNameStore.getText().toString();
+               final String PriceNail = InputImagePrice.getText().toString();
+               final String Branch = InputBranch.getText().toString();
+               if (isImageAdded!=false && imageName != null && NameStore != null && PriceNail != null && Branch != null)
                {
-                   uploadImage(imageName);
+                   uploadImage(imageName,NameStore,PriceNail,Branch);
                }
             }
         });
+
+
     }
 
-    private void uploadImage(final String imageName) {
-        textViewProgress.setVisibility(View.VISIBLE);
-        ProgressBar.setVisibility(View.VISIBLE);
+
+    private void uploadImage(final String imageName,final String NameStore,final String PriceNail,final String Branch) {
+//        textViewProgress.setVisibility(View.VISIBLE);
+//        ProgressBar.setVisibility(View.VISIBLE);
 
         final String key = Dataref.push().getKey();
         StorageRef.child(key+".jpg").putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -92,32 +109,34 @@ public class imageUpload extends AppCompatActivity {
                     @Override
                     public void onSuccess(Uri uri) {
                         HashMap hashMap = new HashMap();
-                        hashMap.put("TypeNail",imageName);
+                        hashMap.put("Time",imageName);
+                        hashMap.put("NameStore",NameStore);
+                        hashMap.put("PriceNail",PriceNail);
+                        hashMap.put("Branch",Branch);
                         hashMap.put("ImageUrl",uri.toString());
-
                         Dataref.child(key).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
-                                startActivity(new Intent(getApplicationContext(),UserSearchActivity.class));
-                                //Toast.makeText(imageUpload.this,"Data Successfully Upload", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(getApplicationContext(),HomeScreen.class));
+                                Toast.makeText(imageUpload.this,"Data Successfully Upload", Toast.LENGTH_SHORT).show();
                             }
                         });
-
-
                     }
                 });
-
-            }
-        })
-                .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
-                double progress = (taskSnapshot.getBytesTransferred()*100)/taskSnapshot.getTotalByteCount();
-                ProgressBar.setProgress((int) progress);
-                textViewProgress.setText(progress +" %");
             }
         });
+//                .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+//            @Override
+//            public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
+//                double progress = (taskSnapshot.getBytesTransferred()*100)/taskSnapshot.getTotalByteCount();
+//                ProgressBar.setProgress((int) progress);
+//                textViewProgress.setText(progress +" %");
+//            }
+//        });
     }
+
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

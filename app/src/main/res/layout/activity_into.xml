@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntoActivity">
+    tools:context=".into.IntoActivity">
 
     <ImageView
         android:id="@+id/img"
-        android:elevation="2dp"
         android:layout_width="wrap_content"
-        android:layout_height="900dp"
-        android:src="@drawable/bginto"
-        app:layout_constraintVertical_bias="0"
-
+        android:layout_height="match_parent"
+        android:elevation="2dp"
         android:scaleType="centerCrop"
+        android:src="@drawable/bginto"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logointo"
         android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

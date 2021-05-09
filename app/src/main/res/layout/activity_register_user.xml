@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register_user">
+    tools:context=".Login.register_user">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -22,15 +22,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
+        android:text="ลงทะเบียน ผู้ใช้งาน"
+        android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#fff"
-        app:layout_constraintVertical_bias=".1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".1" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -72,8 +72,9 @@
             app:layout_constraintWidth_percent=".8"
             app:layout_constraintVertical_bias=".1"
             app:layout_constraintHorizontal_bias=".5"
-            android:hint="Full Name"
+            android:hint="ชื่อ"
             android:paddingLeft="20dp"
+
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:background="@drawable/edit_text"
@@ -87,9 +88,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text"
-            android:hint="Email Address"
+            android:hint="อีเมล"
+            android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
+
+
+            android:drawablePadding="8dp"
             android:paddingBottom="10dp"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -105,8 +110,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text"
-            android:hint="Phone Number"
-            android:inputType="number"
+            android:hint="เบอร์โทรศัพท์"
+            android:inputType="phone"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -125,7 +130,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text"
-            android:hint="Password"
+            android:hint="รหัสผ่าน"
             android:inputType="textPassword"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
@@ -144,7 +149,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text"
-            android:hint="Confirm Password"
+            android:hint="ยืนยันรหัสผ่าน"
             android:inputType="textPassword"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
@@ -160,10 +165,10 @@
 
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBox_User"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Conform Sign up As User ChicChic"
+            android:text="ยืนยันการลงทะเบียนเป็นครอบครัว ChicChic"
             android:layout_marginTop="30dp"
             app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintVertical_bias="0"
@@ -172,24 +177,15 @@
             app:layout_constraintStart_toStartOf="@+id/password_regis_confirm"
             app:layout_constraintTop_toBottomOf="@+id/password_regis_confirm" />
 
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CheckBox"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/password_regis_confirm"
-            app:layout_constraintTop_toBottomOf="@+id/password_regis_confirm" />
 
         <Button
             android:id="@+id/button_ok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="SIGN UP"
+            android:text="ลงทะเบียน"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:background="@drawable/button_search"
+            android:background="@drawable/btn_gradient"
             android:textColor="#ffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -202,7 +198,7 @@
             android:id="@+id/back_signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN IN"
+            android:text="เข้าสู่ระบบ"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

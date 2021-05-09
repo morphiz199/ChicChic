@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+       android:id="@+id/home"
+        android:title="หน้าแรก"
+        android:icon="@drawable/nav_home"
+    />
+    <item
+        android:id="@+id/booking"
+        android:title="จำนวนการจอง"
+        android:icon="@drawable/nav_booking"
+        />
+    <item
+        android:id="@+id/Unbooking"
+        android:title="จำนวนการยกเลิก"
+        android:icon="@drawable/nav_booking"
+        />
+    <item
+        android:id="@+id/Store"
+        android:title="รายการสั่งซื้อสินค้า"
+        android:icon="@drawable/nav_store"
+        />
+    <item
+        android:id="@+id/nail"
+        android:title="ดูแลเล็บ"
+        android:icon="@drawable/nav_nail"
+        />
+    <item
+        android:id="@+id/aboutMe"
+        android:title="เกี่ยวกับเรา"
+        android:icon="@drawable/nav_aboutme"
+        />
+    <item
+        android:id="@+id/account"
+        android:title="บัญชีผู้ใช้"
+        android:icon="@drawable/nav_account"
+        />
+    <item
+        android:id="@+id/setting"
+        android:title="ตั้งค่า"
+        android:icon="@drawable/nav_setting"
+        />
+</menu>

@@ -1,76 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".imageUpload">
+    tools:context=".imageUpload"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/ViewImage"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_image"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0" />
+        android:src="@drawable/ic_image" />
 
     <EditText
-        android:id="@+id/InputImageName"
+        android:id="@+id/InputImageNameStore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ViewImage"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:hint="Enter Image Name..."
+        android:hint="Enter Store Name..."
         app:layout_constraintVertical_bias="0.1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ViewImage" />
-
-    <TextView
-        android:id="@+id/TextViewProgress"
+        app:layout_constraintTop_toBottomOf="@+id/ViewImage"
+        />
+    <EditText
+        android:id="@+id/InputImageName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="0.0%"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/InputImageName"
-        app:layout_constraintVertical_bias="0.1" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputImageNameStore"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
+        android:hint="Enter Type Name..."
+        app:layout_constraintVertical_bias="0.1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextViewProgress"
-        app:layout_constraintVertical_bias=".1" />
+        app:layout_constraintTop_toBottomOf="@+id/ViewImage"
+        />
+    <EditText
+    android:id="@+id/InputImagePrice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/InputImageName"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:hint="Enter Price..."
+    app:layout_constraintVertical_bias="0.1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ViewImage"
+    />
+
+
+    <EditText
+        android:id="@+id/InputImageOpenClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputImagePrice"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter Branch"
+        android:ems="10"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewImage"
+        />
+
+
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/TextViewProgress"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="0.0%"-->
+<!--        android:textSize="25dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/InputImageName"-->
+<!--        app:layout_constraintVertical_bias="0.1" />-->
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/TextViewProgress"-->
+<!--        app:layout_constraintVertical_bias=".1" />-->
+
+    <Button
+        android:id="@+id/btnChangeImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputImageOpenClose"
+        android:background="@drawable/button_search"
+        android:text="ChangeImage"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+         />
 
     <Button
         android:id="@+id/btnUpload"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChangeImg"
         android:background="@drawable/button_bg"
         android:text="Upload"
         android:textColor="#ffff"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
-        app:layout_constraintVertical_bias=".1"
-        app:layout_constraintWidth_percent=".8" />
+        android:layout_marginTop="20dp"
+         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_Activity">
+    tools:context=".Login.Login_Activity">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN IN"
+        android:text="เข้าสู่ระบบ"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#fff"
@@ -55,15 +55,15 @@
             app:layout_constraintTop_toBottomOf="@+id/tab_layout"
             app:layout_constraintVertical_bias="0" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintVertical_bias="0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tab_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintVertical_bias="0"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"/>-->
 
         <EditText
             android:id="@+id/email"
@@ -72,7 +72,8 @@
             app:layout_constraintWidth_percent=".8"
             app:layout_constraintVertical_bias=".2"
             app:layout_constraintHorizontal_bias=".5"
-            android:hint="Email / ID"
+            android:hint="อีเมล"
+            android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -89,7 +90,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_text"
             android:inputType="textPassword"
-            android:hint="Password"
+            android:hint="รหัสผ่าน"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -105,8 +106,8 @@
             android:id="@+id/button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_search"
-            android:text="SignIn"
+            android:background="@drawable/btn_gradient"
+            android:text="เข้าสู่ระบบ"
             android:textColor="#ffff"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -114,14 +115,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password"
-            app:layout_constraintVertical_bias=".3"
+            app:layout_constraintVertical_bias=".2"
             app:layout_constraintWidth_percent=".8" />
 
         <TextView
             android:id="@+id/signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SIGN UP"
+            android:text="ลงทะเบียน"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -134,7 +135,7 @@
             android:id="@+id/forgetpass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forget Password"
+            android:text="ลืมรหัสผ่าน"
             app:layout_constraintVertical_bias="0"
             app:layout_constraintHorizontal_bias="1"
             android:layout_marginTop="5dp"
@@ -145,16 +146,17 @@
             app:layout_constraintTop_toBottomOf="@+id/password" />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OR"
-            android:textStyle="bold"
-            android:textColor="#BBBBBB"
-            app:layout_constraintBottom_toTopOf="@+id/login_button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/signup" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="OR"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#BBBBBB"-->
+<!--            app:layout_constraintVertical_bias="0.2"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/login_button"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/signup" />-->
 
 
 
@@ -166,6 +168,7 @@
             android:layout_height="wrap_content"
             android:textColor="#ffff"
             android:text="Login FACEBOOK"
+            app:layout_constraintVertical_bias="0"
             android:background="@drawable/login_facebook"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
