@@ -1,0 +1,546 @@
+[
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_single_view.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\single_view.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_facebook.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\login_facebook.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_wallclock.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\wallclock.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_camera.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\ic_menu_camera.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user_search.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_user_search.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register_user.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_register_user.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home_page.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_home_page.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_into_bg3.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\into_bg3.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_res_bg.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\res_bg.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\app_bar_main.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_discount_radius.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\btn_discount_radius.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_home.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\logo_home.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_discount_rad.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\btn_discount_rad.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_circle_24.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\ic_baseline_add_circle_24.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_image.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\ic_image.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_upload.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_upload.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_seekbar_col.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\seekbar_col.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_search.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\button_search.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_gallery.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_login_tab_fragment.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\login_tab_fragment.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reccomone.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\reccomone.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_destination.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\destination.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_partner.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_partner.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_bg_regis.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\button_bg_regis.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_phone.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\phone.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_creditcard.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\creditcard.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_im_home_suc.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\im_home_suc.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_arrow.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\arrow.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_gallery.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\fragment_gallery.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_image_upload.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_image_upload.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_discount.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\discount.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_res_bt.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\res_bt.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_input.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\custom_input.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_booking.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_booking.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_img3.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\img3.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_res_bgtwo.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\res_bgtwo.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_price.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\price.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tab3.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\tab3.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_login_.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_on_boarding1.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\fragment_on_boarding1.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_into.jpg.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\bg_into.jpg"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_setting.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\nav_setting.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_matt.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\matt.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_head.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\head.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bookmark.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\bookmark.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_banner_home.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\banner_home.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_into_bg1.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\into_bg1.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mat.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\mat.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_left_arrow.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\left_arrow.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_store.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\nav_store.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_user_profile.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\user_profile.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_krading.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\krading.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_calendar.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\bg_calendar.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register_business.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_register_business.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mail.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\mail.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_im_home.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\im_home.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_into.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_into.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_im_booking.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\im_booking.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tab1.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\tab1.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_radius_home.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\radius_home.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mapp.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\mapp.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_img1.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\img1.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home_user.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_home_user.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lock.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\lock.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_aboutme.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\nav_aboutme.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_on_boarding3.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\fragment_on_boarding3.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reccomtwo.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\reccomtwo.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reccomthree.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\reccomthree.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_home.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\nav_home.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_coin.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\coin.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_discount_gray.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\btn_discount_gray.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bg.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\bg.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_text.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\edit_text.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\anim_o_b_anim.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\anim\\o_b_anim.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\search.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_booking.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\nav_booking.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_discount_col.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\btn_discount_col.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_user.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\user.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_facebook.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\facebook.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_button.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\custom_button.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_banner.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\banner.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_search.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\input_search.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_left_arrow_blue.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\left_arrow_blue.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_user.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_login_user.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_bg.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\button_bg.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_im_homee.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\im_homee.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_login_business_fragment.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\login_business_fragment.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bar.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\bar.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_image.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\ic_baseline_image.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_twitter.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\twitter.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_im_home_succ.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\im_home_succ.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calendar_text.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\calendar_text.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_view_bg.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\view_bg.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_photo.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\photo.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_nail.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\nav_nail.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\menu_home_page.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\menu\\home_page.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_search_24.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bginto.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\bginto.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_tab2.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\tab2.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_slideshow.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_w644.jpeg.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\w644.jpeg"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_on_boarding2.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\fragment_on_boarding2.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_img2.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\img2.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calendar.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\calendar.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_res_bgthree.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\res_bgthree.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_clock.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\clock.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_google.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\google.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logotop.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\logotop.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_account.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\nav_account.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home_business.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_home_business.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_map.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_map.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_into_bg2.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\into_bg2.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rightarrow.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\rightarrow.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_side_nav_bar.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    }
+]

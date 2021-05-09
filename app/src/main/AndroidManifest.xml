@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".wrapper"></activity>
         <activity android:name=".pay_success" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -19,9 +20,6 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
         <activity android:name=".payment" />
         <activity android:name=".Amount" />
         <activity android:name=".HomeScreen" />
@@ -33,7 +31,6 @@
         <activity android:name=".UploadActivity" />
         <activity android:name=".imageUpload" />
         <activity android:name=".LoginUser" />
-        <activity android:name=".HomeBusinessActivity" />
         <activity android:name=".Login.register_business" />
         <activity android:name=".Login.register_user" />
         <activity android:name=".Login.Login_Activity" />
@@ -65,13 +62,13 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
     </application>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>
