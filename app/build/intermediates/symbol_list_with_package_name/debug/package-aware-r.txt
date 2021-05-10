@@ -2172,6 +2172,7 @@ id chip2
 id chip3
 id chip_group
 id chronometer
+id cleanNail
 id clear_text
 id clip_horizontal
 id clip_vertical

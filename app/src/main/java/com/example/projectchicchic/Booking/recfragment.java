@@ -2,7 +2,6 @@ package com.example.projectchicchic.Booking;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,17 +14,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.projectchicchic.Model.model;
 import com.example.projectchicchic.R;
 import com.example.projectchicchic.myAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -42,6 +38,9 @@ public class recfragment extends Fragment {
     EditText editText;
     Button searchList;
     ArrayList<model> arrayList;
+    boolean isClick = false;
+
+    TextView textView33,textView34,textView35,cleanNail;
 
     DatabaseReference mUserDatabase;
 
@@ -82,6 +81,41 @@ public class recfragment extends Fragment {
         backUpload = (ImageView)view.findViewById(R.id.backUpload);
         editText = (EditText)view.findViewById(R.id.editText);
         searchList = (Button) view.findViewById(R.id.searchList);
+
+
+        textView33 = (TextView)view.findViewById(R.id.textView33);
+        textView34 = (TextView)view.findViewById(R.id.textView34);
+        textView35 = (TextView)view.findViewById(R.id.textView35);
+        cleanNail = (TextView)view.findViewById(R.id.cleanNail);
+
+        textView33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        textView34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        textView35.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        cleanNail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         arrayList = new ArrayList<>();
 
         mUserDatabase = FirebaseDatabase.getInstance().getReference("Nail");
@@ -121,32 +155,35 @@ public class recfragment extends Fragment {
         return view;
     }
     private void search(String toString) {
-        Query query = mUserDatabase.orderByChild("TypeNail")
-                .startAt(toString)
-                .endAt(toString + "\uf8ff");
-        query.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.hasChildren()){
-                    arrayList.clear();
-                    for (DataSnapshot dss: snapshot.getChildren()){
-                        final model Model = dss.getValue(model.class);
-                        arrayList.add(Model);
-                    }
+        adapter.getFilter().filter(toString);
+        adapter.getFilter().filter("ทาสีเจล");
 
-//                    myAdapter myAdapter = new myAdapter(onActivityCreated()
-//                            ,arrayList);
-//                    recyclerView.setAdapter(myAdapter);
-//                    myAdapter.notifyDataSetChanged();
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        Query query = mUserDatabase.orderByChild("TypeNail")
+//                .startAt(toString)
+//                .endAt(toString + "\uf8ff");
+//        query.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if (snapshot.hasChildren()){
+//                    arrayList.clear();
+//                    for (DataSnapshot dss: snapshot.getChildren()){
+//                        final model Model = dss.getValue(model.class);
+//                        arrayList.add(Model);
+//                    }
+//
+////                    myAdapter myAdapter = new myAdapter(onActivityCreated()
+////                            ,arrayList);
+////                    recyclerView.setAdapter(myAdapter);
+////                    myAdapter.notifyDataSetChanged();
+//
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
     }
 
     @Override

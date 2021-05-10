@@ -89,9 +89,7 @@ public class register_user extends AppCompatActivity {
                             Toast.makeText(register_user.this,"Account Create",Toast.LENGTH_SHORT ).show();
                             DocumentReference df = mFirebaseFirestore.collection("Users").document(user.getUid());
                             databaseReference = FirebaseDatabase.getInstance().getReference().child("Users");
-
                             User user_object = new User(nameID.getText().toString(),emailID.getText().toString(),passwordID.getText().toString(),phoneID.getText().toString());
-
                             databaseReference.child(user.getUid()).setValue(user_object).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
@@ -103,7 +101,6 @@ public class register_user extends AppCompatActivity {
                                     }
                                 }
                             });
-
                             Map<String,Object> userInfo = new HashMap<>();
                             userInfo.put("Fullname",nameID.getText().toString());
                             userInfo.put("UserEmail",emailID.getText().toString());
@@ -111,13 +108,8 @@ public class register_user extends AppCompatActivity {
 
                             if (isUser.isChecked()){
                                 userInfo.put("isUser","1");
-
                             }
-
-
-
                             df.set(userInfo);
-
                             startActivity(new Intent(getApplicationContext(), Login_Activity.class));
                             finish();
                         }

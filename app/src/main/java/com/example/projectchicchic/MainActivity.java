@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         mGoogleMap = googleMap;
-//        mGoogleMap.setMyLocationEnabled(true);
+        mGoogleMap.setMyLocationEnabled(true);
 
 
     }
@@ -180,16 +180,19 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode==GPS_REQUEST_CODE){
+        if (requestCode == GPS_REQUEST_CODE){
             LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
             boolean providerEnable = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 
             if (providerEnable){
-                Toast.makeText(this,"GPS is enable", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"GPS is enable",Toast.LENGTH_SHORT).show();
+
             }else {
-                Toast.makeText(this,"Gps is not enable", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"GPS is not enable",Toast.LENGTH_SHORT).show();
+
             }
         }
+
     }
 }
