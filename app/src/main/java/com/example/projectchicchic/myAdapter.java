@@ -12,7 +12,6 @@ import com.example.projectchicchic.Booking.FilterableFirestoreRecyclerAdapter;
 import com.example.projectchicchic.Booking.descfragment;
 import com.example.projectchicchic.Model.model;
 import com.firebase.ui.common.ChangeEventType;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -36,16 +35,17 @@ public class myAdapter extends FilterableFirestoreRecyclerAdapter<model,myAdapte
     @Override
     protected void onBindViewHolder(@NonNull myviewholder holder, int position, @NonNull final model model) {
             holder .text_nameStore.setText(model.getNameStore());
-            holder .text_type.setText(model.getTypeNail());
+            holder .text_type.setText(model.getTime());
             holder .text_price.setText(model.getPriceNail());
             holder.branch.setText(model.getBranch());
+            holder.type.setText(model.getType());
             Glide.with(holder.imgNail.getContext()).load(model.getImageUrl()).into(holder.imgNail);
 
             holder.imgNail.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     AppCompatActivity activity = (AppCompatActivity)v.getContext();
-                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new descfragment(model.getNameStore(),model.getTypeNail(),model.getPriceNail(),model.getImageUrl(),model.getBranch()))
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new descfragment(model.getTime(),model.getPriceNail(),model.getImageUrl(),model.getBranch()))
                             .addToBackStack(null).commit();
                 }
             });
@@ -72,7 +72,7 @@ public class myAdapter extends FilterableFirestoreRecyclerAdapter<model,myAdapte
     {
         ConstraintLayout constraintLayout;
         ImageView imgNail;
-        TextView text_nameStore, text_type,text_price,branch;
+        TextView text_nameStore, text_type,text_price,branch,type;
         public myviewholder(@NonNull View itemView) {
             super(itemView);
             constraintLayout = (ConstraintLayout)itemView.findViewById(R.id.constraintLayout);
@@ -80,6 +80,7 @@ public class myAdapter extends FilterableFirestoreRecyclerAdapter<model,myAdapte
             text_nameStore = (TextView)itemView.findViewById(R.id.text_nameStore);
             text_type = (TextView)itemView.findViewById(R.id.text_type);
             text_price = (TextView)itemView.findViewById(R.id.text_price);
+            type = (TextView)itemView.findViewById(R.id.type_make);
             branch = (TextView)itemView.findViewById(R.id.branch);
         }
 

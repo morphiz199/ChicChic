@@ -1,18 +1,19 @@
 package com.example.projectchicchic.Model;
 
 public class model {
-    String ImageUrl,NameStore,PriceNail,TypeNail,Branch;
+    String ImageUrl,NameStore,PriceNail,Type,Branch,Time;
 
     model(){
 
     }
 
-    public model(String imageUrl, String nameStore, String priceNail, String typeNail, String branch) {
+    public model(String imageUrl, String nameStore, String priceNail,String time , String branch,String type) {
         ImageUrl = imageUrl;
         NameStore = nameStore;
         PriceNail = priceNail;
-        TypeNail = typeNail;
-        this.Branch = branch;
+        Type = type;
+        Time = time;
+        Branch = branch;
     }
 
     public String getBranch() {
@@ -38,6 +39,13 @@ public class model {
     public void setNameStore(String nameStore) {
         NameStore = nameStore;
     }
+    public String getTime() {
+        return Time;
+    }
+
+    public void setTime(String time) {
+        Time = time;
+    }
 
     public String getPriceNail() {
         return PriceNail;
@@ -47,11 +55,11 @@ public class model {
         PriceNail = priceNail;
     }
 
-    public String getTypeNail() {
-        return TypeNail;
+    public String getType() {
+        return Type;
     }
 
-    public void setTypeNail(String typeNail) {
-        TypeNail = typeNail;
+    public void setType(String type) {
+        Type = type;
     }
 }

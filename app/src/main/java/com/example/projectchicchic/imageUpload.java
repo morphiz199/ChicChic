@@ -1,42 +1,34 @@
 package com.example.projectchicchic;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.common.collect.BiMap;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Random;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 @SuppressWarnings("ALL")
 public class imageUpload extends AppCompatActivity {
 
      private ImageView  ImageAdd;
      private TextView  textViewProgress;
-     private EditText  inputImageName,InputImageNameStore,InputImagePrice,InputBranch;
+     private EditText  inputImageName,InputImageNameStore,InputImagePrice,InputBranch,select_type;
      private Button  btnUpLoad,btnChangeImage;
      String rgbcolor,hexcolor;
 
@@ -52,6 +44,7 @@ public class imageUpload extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_upload);
 
+        select_type= findViewById(R.id.select_type);
         ImageAdd= findViewById(R.id.ViewImage);
         inputImageName=findViewById(R.id.InputImageName);
         InputImageNameStore=findViewById(R.id.InputImageNameStore);
@@ -64,8 +57,8 @@ public class imageUpload extends AppCompatActivity {
 
 //        textViewProgress.setVisibility(View.GONE);
 //        ProgressBar.setVisibility(View.GONE);
-        Dataref = FirebaseDatabase.getInstance().getReference().child("Partner");
-        StorageRef = FirebaseStorage.getInstance().getReference().child("Partner");
+        Dataref = FirebaseDatabase.getInstance().getReference().child("Nail");
+        StorageRef = FirebaseStorage.getInstance().getReference().child("Nail");
 
         final Random random = new Random();
 
@@ -86,9 +79,10 @@ public class imageUpload extends AppCompatActivity {
                final String NameStore = InputImageNameStore.getText().toString();
                final String PriceNail = InputImagePrice.getText().toString();
                final String Branch = InputBranch.getText().toString();
-               if (isImageAdded!=false && imageName != null && NameStore != null && PriceNail != null && Branch != null)
+                final String Type = select_type.getText().toString();
+               if (isImageAdded!=false && imageName != null && NameStore != null && PriceNail != null && Branch != null && Type != null)
                {
-                   uploadImage(imageName,NameStore,PriceNail,Branch);
+                   uploadImage(imageName,NameStore,PriceNail,Branch,Type);
                }
             }
         });
@@ -97,7 +91,7 @@ public class imageUpload extends AppCompatActivity {
     }
 
 
-    private void uploadImage(final String imageName,final String NameStore,final String PriceNail,final String Branch) {
+    private void uploadImage(final String imageName,final String NameStore,final String PriceNail,final String Branch,final String Type) {
 //        textViewProgress.setVisibility(View.VISIBLE);
 //        ProgressBar.setVisibility(View.VISIBLE);
 
@@ -113,6 +107,7 @@ public class imageUpload extends AppCompatActivity {
                         hashMap.put("NameStore",NameStore);
                         hashMap.put("PriceNail",PriceNail);
                         hashMap.put("Branch",Branch);
+                        hashMap.put("Type",Type);
                         hashMap.put("ImageUrl",uri.toString());
                         Dataref.child(key).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override

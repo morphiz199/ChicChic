@@ -2,20 +2,29 @@ package com.example.projectchicchic.Model;
 
 public class UserSucces {
 
-    String ImageUrl,NameTtpe,Date,Time,Price,Branch;
+    String User,NameTtpe,Date,Time,Price,Branch;
 
 
     public UserSucces() {
 
     }
 
-    public UserSucces(String nameTtpe, String date, String time, String price, String branch) {
+    public UserSucces(String nameTtpe, String date, String time, String price, String branch,String user) {
+
         NameTtpe = nameTtpe;
         Date = date;
         Time = time;
         Price = price;
         Branch = branch;
+        User = user;
 
+    }
+    public String getNameTtpe() {
+        return NameTtpe;
+    }
+
+    public void setNameTtpe(String nameTtpe) {
+        NameTtpe = nameTtpe;
     }
 
     public String getDate() {
@@ -50,12 +59,13 @@ public class UserSucces {
         this.Branch = branch;
     }
 
-    public String getNameTtpe() {
-        return NameTtpe;
+    public String getUser() {
+        return User;
     }
 
-    public void setNameTtpe(String nameTtpe) {
-        NameTtpe = nameTtpe;
+    public void setUser(String user) {
+        User = user;
     }
+
 
 }

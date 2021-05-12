@@ -14,6 +14,8 @@ com/example/projectchicchic/Booking/recfragment.java
  com.example.projectchicchic.Booking.recfragment$3
  com.example.projectchicchic.Booking.recfragment$4
  com.example.projectchicchic.Booking.recfragment$5
+com/example/projectchicchic/NearbyPlaces/GetNearbyPlacesData.java
+ com.example.projectchicchic.NearbyPlaces.GetNearbyPlacesData
 com/example/projectchicchic/payment.java
  com.example.projectchicchic.payment
  com.example.projectchicchic.payment$1
@@ -43,6 +45,8 @@ com/example/projectchicchic/Booking/descfragment.java
  com.example.projectchicchic.Booking.descfragment$3
  com.example.projectchicchic.Booking.descfragment$4
  com.example.projectchicchic.Booking.descfragment$4$1
+com/example/projectchicchic/JsonParaser.java
+ com.example.projectchicchic.JsonParaser
 com/example/projectchicchic/TimeSlot.java
  com.example.projectchicchic.TimeSlot
 com/example/projectchicchic/LoginUser.java
@@ -83,8 +87,6 @@ com/example/projectchicchic/wrapper.java
 com/example/projectchicchic/bookingSuccess.java
  com.example.projectchicchic.bookingSuccess
  com.example.projectchicchic.bookingSuccess$1
- com.example.projectchicchic.bookingSuccess$2
- com.example.projectchicchic.bookingSuccess$3
 com/example/projectchicchic/Information.java
  com.example.projectchicchic.Information
 com/example/projectchicchic/AppComponent.java
@@ -94,10 +96,18 @@ com/example/projectchicchic/into/OnBoardingFragment2.java
 com/example/projectchicchic/into/IntoActivity.java
  com.example.projectchicchic.into.IntoActivity
  com.example.projectchicchic.into.IntoActivity$ScreenSlidePagerAdapter
+com/example/projectchicchic/Model/loadSuccess.java
+ com.example.projectchicchic.Model.loadSuccess
+com/example/projectchicchic/myAdapterSuccess.java
+ com.example.projectchicchic.myAdapterSuccess
+ com.example.projectchicchic.myAdapterSuccess$myviewholder
 com/example/projectchicchic/Booking/FilterableFirestoreRecyclerAdapter.java
  com.example.projectchicchic.Booking.FilterableFirestoreRecyclerAdapter
  com.example.projectchicchic.Booking.FilterableFirestoreRecyclerAdapter$1
  com.example.projectchicchic.Booking.FilterableFirestoreRecyclerAdapter$CustomFilter
+com/example/projectchicchic/HomePartner.java
+ com.example.projectchicchic.HomePartner
+ com.example.projectchicchic.HomePartner$1
 com/example/projectchicchic/Nail.java
  com.example.projectchicchic.Nail
 com/example/projectchicchic/ViewHolder/NailViewHolder.java
@@ -107,19 +117,32 @@ com/example/projectchicchic/bookingService.java
 com/example/projectchicchic/into/OnBoardingFragment3.java
  com.example.projectchicchic.into.OnBoardingFragment3
  com.example.projectchicchic.into.OnBoardingFragment3$1
-com/example/projectchicchic/Config/Config.java
- com.example.projectchicchic.Config.Config
-com/example/projectchicchic/Amount.java
- com.example.projectchicchic.Amount
-com/example/projectchicchic/BuildConfig.java
- com.example.projectchicchic.BuildConfig
+com/example/projectchicchic/NearbyPlaces/DownloadUrl.java
+ com.example.projectchicchic.NearbyPlaces.DownloadUrl
 com/example/projectchicchic/MainActivity.java
  com.example.projectchicchic.MainActivity
  com.example.projectchicchic.MainActivity$1
  com.example.projectchicchic.MainActivity$2
+ com.example.projectchicchic.MainActivity$2$1
+ com.example.projectchicchic.MainActivity$3
+ com.example.projectchicchic.MainActivity$ParserTask
+ com.example.projectchicchic.MainActivity$PlaceTask
+com/example/projectchicchic/Amount.java
+ com.example.projectchicchic.Amount
+com/example/projectchicchic/ProfileParthner.java
+ com.example.projectchicchic.ProfileParthner
+ com.example.projectchicchic.ProfileParthner$1
 com/example/projectchicchic/HomeScreen.java
  com.example.projectchicchic.HomeScreen
  com.example.projectchicchic.HomeScreen$1
  com.example.projectchicchic.HomeScreen$2
  com.example.projectchicchic.HomeScreen$3
  com.example.projectchicchic.HomeScreen$4
+com/example/projectchicchic/NearbyPlaces/DataParser.java
+ com.example.projectchicchic.NearbyPlaces.DataParser
+com/example/projectchicchic/NearbyPlaces/MapsActivity.java
+ com.example.projectchicchic.NearbyPlaces.MapsActivity
+com/example/projectchicchic/BuildConfig.java
+ com.example.projectchicchic.BuildConfig
+com/example/projectchicchic/Config/Config.java
+ com.example.projectchicchic.Config.Config

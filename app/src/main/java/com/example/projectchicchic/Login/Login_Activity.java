@@ -1,10 +1,5 @@
 package com.example.projectchicchic.Login;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.projectchicchic.HomePartner;
 import com.example.projectchicchic.HomeScreen;
 import com.example.projectchicchic.LoginUser;
 import com.example.projectchicchic.R;
@@ -22,6 +18,7 @@ import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,7 +26,6 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.tabs.TabLayout;
-import com.facebook.FacebookSdk;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
@@ -38,6 +34,11 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 
 public class Login_Activity extends AppCompatActivity {
@@ -261,7 +262,7 @@ public class Login_Activity extends AppCompatActivity {
                 Log.d("TAG","onSuccess: " + documentSnapshot.getData());
 
                 if (documentSnapshot.getString("isPartner") != null){
-                    startActivity(new Intent(getApplicationContext(),HomeScreen.class));
+                    startActivity(new Intent(getApplicationContext(), HomePartner.class));
                     finish();
                 }
                 else if (documentSnapshot.getString("isUser") != null){

@@ -11,7 +11,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="160dp"
-        android:layout_height="150dp"
+        android:layout_height="170dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         app:cardElevation="5dp"
@@ -33,7 +33,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout13"
         android:layout_width="210dp"
-        android:layout_height="150dp"
+        android:layout_height="170dp"
         android:background="@drawable/btn_discount_rad"
         android:elevation="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
@@ -116,6 +116,8 @@
             android:text="สาขา :"
             android:textColor="@color/gray"
             android:textSize="14sp"
+            app:layout_constraintVertical_bias=".0"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView21"
@@ -133,6 +135,32 @@
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toEndOf="@+id/textView22"
             app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ประเภท :"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            />
+
+        <TextView
+            android:id="@+id/type_make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ทาสีเจล"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/textView23"
+            app:layout_constraintTop_toTopOf="@+id/textView23" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

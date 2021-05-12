@@ -7,9 +7,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,11 +21,15 @@ import com.bumptech.glide.Glide;
 import com.example.projectchicchic.Model.UserSucces;
 import com.example.projectchicchic.R;
 import com.example.projectchicchic.bookingConfirm;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.Calendar;
+
+import androidx.fragment.app.Fragment;
 
 import static com.facebook.FacebookSdk.getApplicationContext;
 
@@ -40,27 +41,31 @@ public class descfragment extends Fragment {
 
     private String mParam1;
     private String mParam2;
-    String NameStore,TypeNail,PriceNail,ImageUrl,Branch;
+    String Time,PriceNail,ImageUrl,Branch;
 
     private DatePickerDialog.OnDateSetListener dateSetListener;
     private TimePickerDialog.OnTimeSetListener timePickerDia;
-    TextView Date_Pick,tv_time;
+    TextView Date_Pick,tv_time,textView6;
     ImageView imageHolder,select_time;
     Button success;
     TextView FinitPrice,branch;
     boolean isSuccess=false;
+
     DatabaseReference reference;
     FirebaseDatabase  rootnode;
     StorageReference StorageRef;
     private static final int REQUEST_CODE_IMAGE = 101;
     Uri imageUri;
+    FirebaseUser firebaseUser;
+    FirebaseAuth firebaseAuth;
+
+    boolean isImageAdded = false;
 
     public descfragment() {
 
     }
-    public descfragment(String NameStore,String TypeNail,String PriceNail,String ImageUrl,String Branch) {
-        this.NameStore = NameStore;
-        this.TypeNail = TypeNail;
+    public descfragment(String Time,String PriceNail,String ImageUrl,String Branch) {
+        this.Time = Time;
         this.PriceNail = PriceNail;
         this.ImageUrl = ImageUrl;
         this.Branch = Branch;
@@ -92,19 +97,25 @@ public class descfragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_descfragment, container, false);
         imageHolder = view.findViewById(R.id.imgOrder);
-        final TextView Typenail = view.findViewById(R.id.res_name);
+        final TextView NameNail = view.findViewById(R.id.res_name);
         TextView Pricenail = view.findViewById(R.id.priceNail);
         TextView Pricenail2 = view.findViewById(R.id.priceNail2);
         FinitPrice = view.findViewById(R.id.finitPrice);
         branch = view.findViewById(R.id.branch);
+        textView6 = view.findViewById(R.id.textView6);
+
 
 
 
         success = view.findViewById(R.id.success);
 
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
 
 
-        Typenail.setText(TypeNail);
+
+        textView6.setText(firebaseUser.getEmail());
+        NameNail.setText(Time);
         Pricenail.setText(PriceNail);
         Pricenail2.setText(PriceNail);
         FinitPrice.setText(PriceNail);
@@ -122,21 +133,26 @@ public class descfragment extends Fragment {
                 rootnode = FirebaseDatabase.getInstance();
                 reference = rootnode.getReference("Success");
 
-
-                String NameType = Typenail.getText().toString();
+                String User = textView6.getText().toString();
+                String NameType = NameNail.getText().toString();
                 String Date = Date_Pick.getText().toString();
                 String Time = tv_time.getText().toString();
                 String Price = FinitPrice.getText().toString();
                 String Branch = branch.getText().toString();
+                String ImageUrl ;
 
-                UserSucces userSucces = new UserSucces(NameType,Date,Time,Price,Branch);
-                reference.child(NameType).setValue(userSucces);
+                UserSucces userSucces = new UserSucces(NameType,Date,Time,Price,Branch,User);
+                reference.child(Date).setValue(userSucces);
 
                 startActivity(new Intent(getApplicationContext(), bookingConfirm.class));
                 Toast.makeText(descfragment.this.getContext(),"Data Successfully Upload", Toast.LENGTH_SHORT).show();
             }
 
         });
+
+
+
+
 
 
 
@@ -189,8 +205,13 @@ public class descfragment extends Fragment {
 
 
 
+
+
+
         return view;
+
     }
+
 
 
 

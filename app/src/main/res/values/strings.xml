@@ -20,4 +20,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_main2">MainActivity</string>
+    <string name="google_dtrections_key">AIzaSyAMkNPGV2K8fDfeVQfZol8xeK0OmohsuWc</string>
+    <string name="google_places_key">AIzaSyAMkNPGV2K8fDfeVQfZol8xeK0OmohsuWc</string>
 </resources>

@@ -1,15 +1,7 @@
 package com.example.projectchicchic.Booking;
 
-import android.util.Log;
 import android.widget.Filter;
 import android.widget.Filterable;
-
-import androidx.annotation.NonNull;
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleObserver;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.OnLifecycleEvent;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projectchicchic.Model.model;
 import com.firebase.ui.common.ChangeEventType;
@@ -18,11 +10,17 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.ObservableSnapshotArray;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleObserver;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.OnLifecycleEvent;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @param <T>  model class, for parsing {@link DocumentSnapshot}s.
@@ -195,7 +193,7 @@ public abstract class FilterableFirestoreRecyclerAdapter<T, VH extends RecyclerV
     protected boolean filterCondition(T model, String filterPattern) {
         model tmp = (model)model;
         return tmp.getNameStore().toLowerCase().contains(filterPattern) || tmp.getBranch().toLowerCase().contains(filterPattern)
-                || tmp.getTypeNail().toLowerCase().contains(filterPattern)|| tmp.getPriceNail().toLowerCase().contains(filterPattern);
+                || tmp.getType().toLowerCase().contains(filterPattern)|| tmp.getPriceNail().toLowerCase().contains(filterPattern)|| tmp.getTime().toLowerCase().contains(filterPattern);
     }
 
     @Override

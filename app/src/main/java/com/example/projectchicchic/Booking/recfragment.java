@@ -1,11 +1,6 @@
 package com.example.projectchicchic.Booking;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -25,6 +20,10 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 
 public class recfragment extends Fragment {
 
@@ -40,7 +39,7 @@ public class recfragment extends Fragment {
     ArrayList<model> arrayList;
     boolean isClick = false;
 
-    TextView textView33,textView34,textView35,cleanNail;
+    TextView textView33,textView34,textView35,cleanNail,type;
 
     DatabaseReference mUserDatabase;
 
@@ -156,34 +155,7 @@ public class recfragment extends Fragment {
     }
     private void search(String toString) {
         adapter.getFilter().filter(toString);
-        adapter.getFilter().filter("ทาสีเจล");
 
-//        Query query = mUserDatabase.orderByChild("TypeNail")
-//                .startAt(toString)
-//                .endAt(toString + "\uf8ff");
-//        query.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                if (snapshot.hasChildren()){
-//                    arrayList.clear();
-//                    for (DataSnapshot dss: snapshot.getChildren()){
-//                        final model Model = dss.getValue(model.class);
-//                        arrayList.add(Model);
-//                    }
-//
-////                    myAdapter myAdapter = new myAdapter(onActivityCreated()
-////                            ,arrayList);
-////                    recyclerView.setAdapter(myAdapter);
-////                    myAdapter.notifyDataSetChanged();
-//
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
     }
 
     @Override
