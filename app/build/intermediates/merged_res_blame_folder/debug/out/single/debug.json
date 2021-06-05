@@ -80,20 +80,20 @@
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_image_upload.xml"
     },
     {
-        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_navbar.xml.flat",
-        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\navbar.xml"
-    },
-    {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_reccomthree.png.flat",
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\reccomthree.png"
     },
     {
-        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_name.xml.flat",
-        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-anydpi\\ic_action_name.xml"
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_navbar.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\navbar.xml"
     },
     {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_right_arrow.png.flat",
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\right_arrow.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_name.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-anydpi\\ic_action_name.xml"
     },
     {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_radius_home.xml.flat",
@@ -164,12 +164,12 @@
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\im_booking.png"
     },
     {
-        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_gradient.xml.flat",
-        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\btn_gradient.xml"
-    },
-    {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_loupe.png.flat",
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\loupe.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_gradient.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\btn_gradient.xml"
     },
     {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_jell.png.flat",
@@ -180,24 +180,28 @@
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\mail.png"
     },
     {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_android_manofest.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_android_manofest.xml"
+    },
+    {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_discount.png.flat",
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\discount.png"
     },
     {
-        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_name.png.flat",
-        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
-    },
-    {
-        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_menu_map.png.flat",
-        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\menu_map.png"
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_img1.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\img1.png"
     },
     {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home_screen.xml.flat",
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_home_screen.xml"
     },
     {
-        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_img1.png.flat",
-        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\img1.png"
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_menu_map.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\menu_map.png"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_name.png.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
     },
     {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_pay.png.flat",
@@ -238,6 +242,10 @@
     {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_radius_booking.xml.flat",
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable-v24\\radius_booking.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_test.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_test.xml"
     },
     {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_phone.png.flat",
@@ -308,12 +316,12 @@
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\facebook.png"
     },
     {
-        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_booking_down_payment.xml.flat",
-        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_booking_down_payment.xml"
-    },
-    {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_search.xml.flat",
         "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\drawable\\input_search.xml"
+    },
+    {
+        "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_booking_down_payment.xml.flat",
+        "source": "D:\\ProjectChicChic\\app\\src\\main\\res\\layout\\activity_booking_down_payment.xml"
     },
     {
         "merged": "D:\\ProjectChicChic\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_menu_home_gray.png.flat",

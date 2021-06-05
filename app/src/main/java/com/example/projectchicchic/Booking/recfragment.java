@@ -90,6 +90,7 @@ public class recfragment extends Fragment {
         textView33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                adapter.getFilter().filter("ทาสีเจล");
 
             }
         });
@@ -97,6 +98,7 @@ public class recfragment extends Fragment {
         textView34.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                adapter.getFilter().filter("เพ้นท์เล็บ");
 
             }
         });
@@ -104,6 +106,7 @@ public class recfragment extends Fragment {
         textView35.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                adapter.getFilter().filter("ทาเล็บทั่วไป");
 
             }
         });
@@ -114,22 +117,15 @@ public class recfragment extends Fragment {
 
             }
         });
-
         arrayList = new ArrayList<>();
-
         mUserDatabase = FirebaseDatabase.getInstance().getReference("Nail");
-
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
             }
-
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
             }
-
             @Override
             public void afterTextChanged(Editable s) {
                 if (!s.toString().isEmpty()){
@@ -141,8 +137,6 @@ public class recfragment extends Fragment {
 
             }
         });
-
-
         FirebaseRecyclerOptions<model> options =
                 new FirebaseRecyclerOptions.Builder<model>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Nail"), model.class)
@@ -155,6 +149,7 @@ public class recfragment extends Fragment {
     }
     private void search(String toString) {
         adapter.getFilter().filter(toString);
+
 
     }
 

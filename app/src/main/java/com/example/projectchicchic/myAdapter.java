@@ -45,7 +45,9 @@ public class myAdapter extends FilterableFirestoreRecyclerAdapter<model,myAdapte
                 @Override
                 public void onClick(View v) {
                     AppCompatActivity activity = (AppCompatActivity)v.getContext();
-                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new descfragment(model.getTime(),model.getPriceNail(),model.getImageUrl(),model.getBranch()))
+                    activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new
+                            descfragment(model.getTime(),model.getPriceNail(),model.getImageUrl()
+                            ,model.getBranch()))
                             .addToBackStack(null).commit();
                 }
             });
@@ -54,12 +56,14 @@ public class myAdapter extends FilterableFirestoreRecyclerAdapter<model,myAdapte
     @NonNull
     @Override
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_view,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_view,parent
+                ,false);
         return  new myviewholder(view);
     }
 
     @Override
-    public void onChildChanged(@NonNull ChangeEventType type, @NonNull DataSnapshot snapshot, int newIndex, int oldIndex) {
+    public void onChildChanged(@NonNull ChangeEventType type, @NonNull DataSnapshot snapshot
+            , int newIndex, int oldIndex) {
         onChildChangedTmp(type,snapshot,newIndex,oldIndex);
     }
 

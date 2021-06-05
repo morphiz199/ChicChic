@@ -142,19 +142,13 @@ public class descfragment extends Fragment {
                 String ImageUrl ;
 
                 UserSucces userSucces = new UserSucces(NameType,Date,Time,Price,Branch,User);
-                reference.child(Date).setValue(userSucces);
+                reference.child(NameType).setValue(userSucces);
 
                 startActivity(new Intent(getApplicationContext(), bookingConfirm.class));
                 Toast.makeText(descfragment.this.getContext(),"Data Successfully Upload", Toast.LENGTH_SHORT).show();
             }
 
         });
-
-
-
-
-
-
 
         Select_Date.setOnClickListener(new View.OnClickListener() {
             @Override

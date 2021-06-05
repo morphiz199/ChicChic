@@ -76,9 +76,9 @@ public class ProfileParthner extends Fragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile_parthner, container, false);
-        textView53 = view.findViewById(R.id.textView53);
-        textView54 = view.findViewById(R.id.textView54);
-        logout = view.findViewById(R.id.button);
+        textView53 = (TextView) view.findViewById(R.id.textView53);
+        textView54 = (TextView)view.findViewById(R.id.textView54);
+        logout = (Button) view.findViewById(R.id.button);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
 

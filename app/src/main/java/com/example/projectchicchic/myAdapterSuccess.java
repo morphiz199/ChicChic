@@ -4,8 +4,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.projectchicchic.Booking.FilterableFirestoreRecyclerAdapter;
 import com.example.projectchicchic.Model.loadSuccess;
 import com.firebase.ui.common.ChangeEventType;
@@ -35,6 +37,7 @@ public class myAdapterSuccess extends FilterableFirestoreRecyclerAdapter<loadSuc
         holder.branch.setText(loadSuccess.getBranch());
         holder.date.setText(loadSuccess.getDate());
         holder.time.setText(loadSuccess.getTime());
+        Glide.with(holder.imgNail.getContext()).load(loadSuccess.getImageUrl()).into(holder.imgNail);
 
     }
 
@@ -65,12 +68,14 @@ public class myAdapterSuccess extends FilterableFirestoreRecyclerAdapter<loadSuc
     public class myviewholder extends RecyclerView.ViewHolder {
 
         ConstraintLayout constraintLayout;
+        ImageView imgNail;
         TextView user_booking, text_type,text_price,branch,date,time;
 
         public myviewholder(@NonNull View itemView) {
             super(itemView);
             constraintLayout = (ConstraintLayout)itemView.findViewById(R.id.constraintLayout);
             user_booking = (TextView)itemView.findViewById(R.id.text_nameUserBooking);
+            imgNail = (ImageView)itemView.findViewById(R.id.imgNail);
             text_type = (TextView)itemView.findViewById(R.id.text_type);
             text_price = (TextView)itemView.findViewById(R.id.text_price);
             branch = (TextView)itemView.findViewById(R.id.branch);

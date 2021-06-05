@@ -11,46 +11,46 @@
 9-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml
 10
 11    <permission
-11-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:86:5-88:47
+11-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:87:5-89:47
 12        android:name="in.wptrafficanalyzer.locationattouchedpositionv2.permission.MAPS_RECEIVE"
-12-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:87:9-96
+12-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:88:9-96
 13        android:protectionLevel="signature" />
-13-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:88:9-44
+13-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:89:9-44
 14
 15    <uses-feature
-15-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:90:5-92:35
+15-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:91:5-93:35
 16        android:glEsVersion="0x00020000"
-16-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:91:9-41
+16-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:92:9-41
 17        android:required="true" />
-17-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:92:9-32
+17-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:93:9-32
 18
 19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-19-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:93:5-79
-19-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:93:22-76
+19-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:94:5-79
+19-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:94:22-76
 20    <uses-permission android:name="in.wptrafficanalyzer.locationattouchedpositionv2.permission.MAPS_RECEIVE" />
-20-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:94:5-112
-20-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:94:22-109
+20-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:95:5-112
+20-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:95:22-109
 21    <uses-permission android:name="android.permission.INTERNET" />
-21-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:95:5-67
-21-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:95:22-64
+21-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:96:5-67
+21-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:96:22-64
 22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-22-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:96:5-81
-22-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:96:22-78
+22-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:97:5-81
+22-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:97:22-78
 23    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-23-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:97:5-98
-23-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:97:22-95
+23-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:98:5-98
+23-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:98:22-95
 24    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-24-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:98:5-81
-24-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:98:22-78
+24-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:99:5-81
+24-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:99:22-78
 25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-25-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:99:5-79
-25-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:99:22-76
+25-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:100:5-79
+25-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:100:22-76
 26    <uses-permission android:name="android.permission.CAMERA" />
-26-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:100:5-65
-26-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:100:22-62
+26-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:101:5-65
+26-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:101:22-62
 27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-27-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:102:5-80
-27-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:102:22-77
+27-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:103:5-80
+27-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:103:22-77
 28    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 28-->[com.google.android.libraries.places:places:2.4.0] C:\Users\Most\.gradle\caches\transforms-2\files-2.1\fe933f7983c104922baeddd623f54e17\jetified-places-2.4.0\AndroidManifest.xml:10:5-76
 28-->[com.google.android.libraries.places:places:2.4.0] C:\Users\Most\.gradle\caches\transforms-2\files-2.1\fe933f7983c104922baeddd623f54e17\jetified-places-2.4.0\AndroidManifest.xml:10:22-73
@@ -88,7 +88,7 @@
 45-->[io.card:android-sdk:5.5.1] C:\Users\Most\.gradle\caches\transforms-2\files-2.1\f106823a26cf51458437492390cb9c7f\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
 46
 47    <application
-47-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:6:5-84:19
+47-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:6:5-85:19
 48        android:allowBackup="true"
 48-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:7:9-35
 49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -103,12 +103,14 @@
 54-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:10:9-54
 55        android:supportsRtl="true"
 55-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:11:9-35
-56        android:testOnly="true"
-57        android:theme="@style/AppTheme" >
-57-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:12:9-40
+56        android:theme="@style/AppTheme" >
+56-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:12:9-40
+57        <activity android:name="com.example.projectchicchic.AndroidManofest" />
+57-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:13:9-62
+57-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:13:19-50
 58        <activity android:name="com.example.projectchicchic.HomePartner" />
-58-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:13:9-58
-58-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:13:19-46
+58-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:14:9-49
+58-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:14:19-46
 59        <!--
 60             The API key for Google Maps-based APIs is defined as a string resource.
 61             (See the file "res/values/google_maps_api.xml").
@@ -118,14 +120,14 @@
 65             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 66        -->
 67        <activity
-67-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:22:9-24:59
+67-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:23:9-25:59
 68            android:name="com.example.projectchicchic.NearbyPlaces.MapsActivity"
-68-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:23:13-54
+68-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:24:13-54
 69            android:label="@string/title_activity_maps" />
-69-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:24:13-56
+69-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:25:13-56
 70        <activity android:name="com.example.projectchicchic.wrapper" />
-70-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:25:9-45
-70-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:25:19-42
+70-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:26:9-45
+70-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:26:19-42
 71        <!--
 72             The API key for Google Maps-based APIs is defined as a string resource.
 73             (See the file "res/values/google_maps_api.xml").
@@ -135,14 +137,14 @@
 77             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 78        -->
 79        <activity android:name="com.example.projectchicchic.pay_success" />
-79-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:34:9-49
-79-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:34:19-46
+79-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:35:9-49
+79-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:35:19-46
 80        <activity android:name="com.example.projectchicchic.payment" />
-80-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:35:9-45
-80-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:35:19-42
+80-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:36:9-45
+80-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:36:19-42
 81        <activity android:name="com.example.projectchicchic.Amount" />
-81-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:36:9-44
-81-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:36:19-41
+81-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:37:9-44
+81-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:37:19-41
 82        <!--
 83             The API key for Google Maps-based APIs is defined as a string resource.
 84             (See the file "res/values/google_maps_api.xml").
@@ -152,84 +154,84 @@
 88             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 89        -->
 90        <activity android:name="com.example.projectchicchic.HomeScreen" />
-90-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:45:9-48
-90-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:45:19-45
+90-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:46:9-48
+90-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:46:19-45
 91        <activity android:name="com.example.projectchicchic.bookingConfirm" />
-91-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:46:9-52
-91-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:46:19-49
+91-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:47:9-52
+91-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:47:19-49
 92        <activity android:name="com.example.projectchicchic.bookingDownPayment" />
-92-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:47:9-56
-92-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:47:19-53
+92-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:48:9-56
+92-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:48:19-53
 93        <activity android:name="com.example.projectchicchic.bookingSuccess" />
-93-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:48:9-52
-93-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:48:19-49
+93-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:49:9-52
+93-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:49:19-49
 94        <activity android:name="com.example.projectchicchic.Information" />
-94-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:49:9-49
-94-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:49:19-46
+94-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:50:9-49
+94-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:50:19-46
 95        <activity android:name="com.example.projectchicchic.bookingService" />
-95-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:50:9-52
-95-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:50:19-49
+95-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:51:9-52
+95-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:51:19-49
 96        <activity android:name="com.example.projectchicchic.UploadActivity" />
-96-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:51:9-52
-96-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:51:19-49
+96-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:52:9-52
+96-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:52:19-49
 97        <activity android:name="com.example.projectchicchic.imageUpload" />
-97-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:52:9-49
-97-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:52:19-46
+97-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:53:9-49
+97-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:53:19-46
 98        <activity android:name="com.example.projectchicchic.LoginUser" />
-98-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:53:9-47
-98-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:53:19-44
+98-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:54:9-47
+98-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:54:19-44
 99        <activity android:name="com.example.projectchicchic.Login.register_business" />
-99-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:54:9-61
-99-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:54:19-58
+99-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:55:9-61
+99-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:55:19-58
 100        <activity android:name="com.example.projectchicchic.Login.register_user" />
-100-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:55:9-57
-100-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:55:19-54
+100-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:56:9-57
+100-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:56:19-54
 101        <activity android:name="com.example.projectchicchic.Login.Login_Activity" />
-101-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:56:9-58
-101-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:56:19-55
+101-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:57:9-58
+101-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:57:19-55
 102        <activity android:name="com.example.projectchicchic.into.IntoActivity" >
-102-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:57:9-65:20
-102-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:58:13-46
+102-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:58:9-66:20
+102-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:59:13-46
 103            <intent-filter>
-103-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:60:13-64:29
+103-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:61:13-65:29
 104                <action android:name="android.intent.action.MAIN" />
-104-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:61:17-69
-104-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:61:25-66
+104-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:62:17-69
+104-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:62:25-66
 105
 106                <category android:name="android.intent.category.LAUNCHER" />
-106-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:63:17-77
-106-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:63:27-74
+106-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:64:17-77
+106-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:64:27-74
 107            </intent-filter>
 108        </activity>
 109        <activity
-109-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:66:9-69:45
+109-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:67:9-70:45
 110            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-110-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:67:13-76
+110-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:68:13-76
 111            android:screenOrientation="portrait" />
-111-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:68:13-49
+111-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:69:13-49
 112        <activity android:name="com.example.projectchicchic.MainActivity" />
-112-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:70:9-72:45
-112-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:71:13-41
+112-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:71:9-73:45
+112-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:72:13-41
 113
 114        <meta-data
-114-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:74:9-76:55
+114-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:75:9-77:55
 115            android:name="com.google.android.geo.API_KEY"
-115-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:75:13-58
+115-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:76:13-58
 116            android:value="@string/google_maps_key" />
-116-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:76:13-52
+116-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:77:13-52
 117        <meta-data
-117-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:77:9-79:55
+117-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:78:9-80:55
 118            android:name="com.facebook.sdk.ApplicationId"
-118-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:78:13-58
+118-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:79:13-58
 119            android:value="@string/facebook_app_id" />
-119-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:79:13-52
+119-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:80:13-52
 120
 121        <uses-library
-121-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:81:9-83:40
+121-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:82:9-84:40
 122            android:name="org.apache.http.legacy"
-122-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:82:13-50
+122-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:83:13-50
 123            android:required="false" />
-123-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:83:13-37
+123-->D:\ProjectChicChic\app\src\main\AndroidManifest.xml:84:13-37
 124
 125        <activity
 125-->[com.karumi:dexter:6.2.2] C:\Users\Most\.gradle\caches\transforms-2\files-2.1\5d9398fda99a84c07699e319d9f089d4\jetified-dexter-6.2.2\AndroidManifest.xml:27:9-29:72

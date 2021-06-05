@@ -63,7 +63,7 @@ public class HomePartner extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intToMain = new Intent(HomePartner.this,
-                        ProfileParthner.class);
+                        AndroidManofest.class);
                 startActivity(intToMain);
             }
         });

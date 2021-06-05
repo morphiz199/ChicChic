@@ -1,18 +1,18 @@
 package com.example.projectchicchic.into;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.example.projectchicchic.R;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class IntoActivity extends AppCompatActivity {
 
@@ -39,7 +39,7 @@ public class IntoActivity extends AppCompatActivity {
         anim = AnimationUtils.loadAnimation(this, R.anim.o_b_anim);
         viewPager.startAnimation(anim);
 
-        splashImg.animate().translationY(-2400).setDuration(1000).setStartDelay(1000);
+        splashImg.animate().translationY(-3000).setDuration(1000).setStartDelay(1000);
         logo.animate().translationY(1400).setDuration(1000).setStartDelay(1000);
     }
 

@@ -42,7 +42,8 @@ public abstract class FilterableFirestoreRecyclerAdapter<T, VH extends RecyclerV
      * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link
      * FirebaseRecyclerOptions} for configuration options.
      */
-    public FilterableFirestoreRecyclerAdapter(@NonNull FirebaseRecyclerOptions<T> options, boolean isFiltarable) {
+    public FilterableFirestoreRecyclerAdapter(@NonNull FirebaseRecyclerOptions<T> options
+            , boolean isFiltarable) {
         mOptions = options;
         mSnapshots = options.getSnapshots();
 
@@ -192,8 +193,11 @@ public abstract class FilterableFirestoreRecyclerAdapter<T, VH extends RecyclerV
      */
     protected boolean filterCondition(T model, String filterPattern) {
         model tmp = (model)model;
-        return tmp.getNameStore().toLowerCase().contains(filterPattern) || tmp.getBranch().toLowerCase().contains(filterPattern)
-                || tmp.getType().toLowerCase().contains(filterPattern)|| tmp.getPriceNail().toLowerCase().contains(filterPattern)|| tmp.getTime().toLowerCase().contains(filterPattern);
+        return tmp.getNameStore().toLowerCase().contains(filterPattern) ||
+                tmp.getBranch().toLowerCase().contains(filterPattern)
+                || tmp.getType().toLowerCase().contains(filterPattern)||
+                tmp.getPriceNail().toLowerCase().contains(filterPattern)
+                || tmp.getTime().toLowerCase().contains(filterPattern);
     }
 
     @Override

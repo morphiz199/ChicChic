@@ -2423,6 +2423,7 @@ drawable w644
 drawable wallclock
 drawable yes
 id ALT
+id AndroidManofest
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
@@ -3166,6 +3167,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_amount
+layout activity_android_manofest
 layout activity_booking_confirm
 layout activity_booking_down_payment
 layout activity_booking_service
@@ -3183,6 +3185,7 @@ layout activity_pay_success
 layout activity_payment
 layout activity_register_business
 layout activity_register_user
+layout activity_test
 layout activity_upload
 layout activity_wrapper
 layout browser_actions_context_menu_page

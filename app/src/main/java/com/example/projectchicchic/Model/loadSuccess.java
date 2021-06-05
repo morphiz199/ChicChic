@@ -8,8 +8,9 @@ public class loadSuccess {
 
     }
 
-    public loadSuccess(String nameTtpe, String date, String time, String price, String branch,String user) {
+    public loadSuccess(String nameTtpe, String date, String time, String price, String branch,String user,String imageUrl) {
 
+        ImageUrl = imageUrl;
         NameTtpe = nameTtpe;
         Date = date;
         Time = time;
@@ -64,6 +65,14 @@ public class loadSuccess {
 
     public void setUser(String user) {
         User = user;
+    }
+
+    public String getImageUrl() {
+        return ImageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        ImageUrl = imageUrl;
     }
 
 }

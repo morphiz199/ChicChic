@@ -56,6 +56,8 @@ com/example/projectchicchic/LoginUser.java
  com.example.projectchicchic.LoginUser$3
 com/example/projectchicchic/Model/User.java
  com.example.projectchicchic.Model.User
+com/example/projectchicchic/AndroidManofest.java
+ com.example.projectchicchic.AndroidManofest
 com/example/projectchicchic/UploadActivity.java
  com.example.projectchicchic.UploadActivity
  com.example.projectchicchic.UploadActivity$1
